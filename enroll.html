@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now | ELWEB</title>
+    <link rel="stylesheet" href="enroll.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Enrollment Form</h1>
+    <p>Fill in your details to enroll in your desired course.</p>
+
+    <form onsubmit="return enrollStudent()">
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        <label>Select Course</label>
+
+        <select required>
+            <option value="">Choose a Course</option>
+            <option>Full Stack Development</option>
+            <option>Python Programming</option>
+            <option>Java Development</option>
+            <option>Data Science</option>
+            <option>UI/UX Design</option>
+            <option>Cloud Computing</option>
+            <option>Cyber Security</option>
+        </select>
+
+        <label>Qualification</label>
+        <input type="text" placeholder="Ex: B.Sc Computer Science">
+
+        <label>Message</label>
+        <textarea rows="5" placeholder="Write your message..."></textarea>
+
+        <button type="submit">Enroll Now</button>
+
+    </form>
+
+    <a href="index.html" class="back"><button>⬅ Back to Home</button></a>
+
+</div>
+
+<script>
+
+function enrollStudent(){
+
+alert("🎉 Congratulations! Your enrollment request has been submitted successfully. Our ELWEB team will contact you soon.");
+
+return false;
+
+}
+
+</script>
+
+</body>
+</html>

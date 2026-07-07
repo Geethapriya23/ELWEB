@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page nav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+            <div class="logo">
+                <img src="https://www.adobe.com/in/products/illustrator/media_12e006c0c18796e3459a900e1203eb5e46d34697a.png?width=750&format=webply&optimize=medium" alt="Elysium logo" width="70" height="50">
+                <span class="brand">ELWEB</span>
+            </div>
+        
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="courses.html">Courses</a>
+                <ul class="dropdown-content">
+                    <li><a href="courses.html#web">Web Development</a></li><br>
+                    <li><a href="courses.html#data">Data Science</a></li><br>
+                    <li><a href="courses.html#fullstack">Full Stack</a></li><br>
+                </ul>
+            </li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="placement.html">Placement</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+       
+    </nav>
+    <marquee class="marquee" behavior="scroll" direction="left" scrollamount="5">
+        <ul>
+        <li>&#128591; Welcome to ELWEB! </li>
+        <li>&#128187; Explore our courses and enhance your skills! </li>
+        <li>&#128101; Join our community and stay updated! </li>
+        <li>&#128240; Check out our latest blog posts and news! </li>
+        <li>🕻  Contact us for any inquiries or support! </li>
+
+        </ul>
+    </marquee>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+    <script>
+        document.addEventListener('click', function(e) {
+            const dropdown = e.target.closest('.dropdown');
+            if (!dropdown) {
+                document.querySelectorAll('.dropdown.active').forEach(d => d.classList.remove('active'));
+                return;
+            }
+
+            const clickedLink = e.target.closest('a');
+            const isSubmenuLink = clickedLink && clickedLink.closest('.dropdown-content');
+
+            if (isSubmenuLink) {
+                dropdown.classList.remove('active');
+                return;
+            }
+
+            if (clickedLink && clickedLink.parentElement === dropdown) {
+                dropdown.classList.toggle('active');
+                return;
+            }
+
+            dropdown.classList.toggle('active');
+        });
+    </script>
+    <div class="hero">
+     
+    <h1>No.1 Destination for <br> Premier <span style="color: #136da5;">Coaching<br> Excellence </span> </h1>
+    <p>Elysium Academy provides industry-led training that equips students with authentic corporate experience, consistently resulting in placements at premier global organizations.</p>
+    <button onclick="window.location.href='view courses.html'">View Courses</button>
+    
+    </div>
+   <section class="features">
+    <div class="card">
+        <h3>Industry-Led Training</h3>
+        <img src=https://www.bing.com/th/id/OIP.A03sYfFWzOEW3pud1FTGGgHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=250  alt="Industry-Led Training">    
+        <p>Our courses are designed and delivered by industry experts, ensuring you gain real-world skills and knowledge.</p>
+        <div class="button-group">
+  <a href="Learn More.html" class="btn">Learn More</a>
+   <a href="enroll.html" class="btn">Enroll Now</a>
+</div>
+    </div>
+    <div class="card">
+        <h3>Authentic Corporate Experience</h3>
+        <img src="https://www.bing.com/th/id/OIP.AmBagYDoqtknTMq4G9_9AgHaE7?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+        <p>We provide hands-on projects and internships that simulate real corporate environments, preparing you for the workforce.</p>
+        <div class="button-group">
+ <a href="Learn More.html" class="btn">Learn More</a>
+   <a href="enroll.html" class="btn">Enroll Now</a>
+</div>
+    </div>
+    <div class="card">
+        <h3>Global Placements</h3>
+        <img src="https://www.bing.com/th/id/OIP.F8p6H5GjLqnhZJGz7D2AQAHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Global Placements">
+        <p>Our students consistently secure placements at premier global organizations, thanks to our strong industry connections.</p>
+        <div class="button-group">
+  <a href="Learn More.html" class="btn">Learn More</a>
+   <a href="enroll.html" class="btn">Enroll Now</a>
+</div>
+    </div>
+</section>
+<marquee class="marquee2" behavior="scroll" direction="left" scrollamount="5">
+    <ul>
+       <li><img src="C:\Users\geeth\Desktop\web\images\C6rKRY5L-anna-university-chennai.webp" alt="Anna University"></li>
+         <li><img src="C:\Users\geeth\Desktop\web\images\9TNw1reF-google-for-education.webp" alt="Google"></li>
+            <li><img src="C:\Users\geeth\Desktop\web\images\BO405Vrs-iit-kanpur.webp" alt="IIT Kanpur"></li>
+                <li><img src="C:\Users\geeth\Desktop\web\images\D1CT1oLd-iitm-pravartak.webp" alt="IIT Madras"></li>
+                <li><img src="C:\Users\geeth\Desktop\web\images\BIsdws_8-iit-ropar.webp" alt="IIT Ropar"></li>
+                <li><img src="C:\Users\geeth\Desktop\web\images\BCPcGBgM-naan-mudhalvan.webp" alt="Naan Mudhalvan"></li>
+                 <li><img src="C:\Users\geeth\Desktop\web\images\CnnFx7sx-swayam-plus.webp" alt="Swayam Plus"></li>
+    </ul>
+</marquee>
+<div class="hero2">
+    <h1>Confused about which course to choose?</h1>
+    <p>Our team of experienced advisors is ready to guide you in selecting the right course for your career goals.</p>
+    <button>Get Personalized Advice</button>
+</div>
+
+<section class="reviews">
+    <h2>What Our Students Say</h2>
+    <div class="review-slider">
+        <div class="review-track">
+            <div class="review-container">
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.osaiDFwFUgPPZhVxQB__vQHaJH?w=193&h=238&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Priya S</h3>
+                    <p class="course">Full Stack Development</p>
+                    <p>"Excellent faculty and practical training. Highly recommended!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.a-6135PpWj-MUKVup-xAswHaJL?w=193&h=240&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Arun K</h3>
+                    <p class="course">Data Science</p>
+                    <p>"The placement support was amazing and helped me get my first job."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.2UKprpudkcFOK7TkJyOIYgHaDP?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Meena R</h3>
+                    <p class="course">Web Development</p>
+                    <p>"Great learning environment with hands-on projects."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.v8-1ee5xWOlLJQlhO7QKpAHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Nivetha M</h3>
+                    <p class="course">Data Science</p>
+                    <p>"Excellent Faculty. Highly Recommended"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.jan6HuGsm5L-jmCAqYg-WQHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Mythra S</h3>
+                    <p class="course">Web Development</p>
+                    <p>"Well teaching staffs. Full hands-on section"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <div class="review-container">
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.osaiDFwFUgPPZhVxQB__vQHaJH?w=193&h=238&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Priya S</h3>
+                    <p class="course">Full Stack Development</p>
+                    <p>"Excellent faculty and practical training. Highly recommended!"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.a-6135PpWj-MUKVup-xAswHaJL?w=193&h=240&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Arun K</h3>
+                    <p class="course">Data Science</p>
+                    <p>"The placement support was amazing and helped me get my first job."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.2UKprpudkcFOK7TkJyOIYgHaDP?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Meena R</h3>
+                    <p class="course">Web Development</p>
+                    <p>"Great learning environment with hands-on projects."</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.v8-1ee5xWOlLJQlhO7QKpAHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Nivetha M</h3>
+                    <p class="course">Data Science</p>
+                    <p>"Excellent Faculty. Highly Recommended"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+
+                <div class="review-card">
+                    <img src="https://www.bing.com/th/id/OIP.jan6HuGsm5L-jmCAqYg-WQHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Student">
+                    <h3>Mythra S</h3>
+                    <p class="course">Web Development</p>
+                    <p>"Well teaching staffs. Full hands-on section"</p>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="location">
+    <h2>Our Location</h2>
+    <p>Visit our campus and explore our facilities.</p>
+<section class="container">
+    <div class="map-container"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb="
+            width="50%"
+            height="450"
+            style="border:0;" 
+            allowfullscreen=""
+            loading="lazy">
+           
+        </iframe>
+    </div>
+    <div class="address">
+    <h3>📍 Address</h3>
+    <br>
+    <p>
+        ABC Educational Institution,<br>
+        Hosur, Tamil Nadu, India
+    </p>
+</div>
+</section>
+</section>
+<script>
+
+const reviews = document.querySelectorAll(".review-card");
+let currentReview = 0;
+
+function showReview() {
+
+    reviews.forEach(card => {
+        card.classList.remove("active");
+    });
+
+    reviews[currentReview].classList.add("active");
+
+    currentReview++;
+
+    if(currentReview >= reviews.length){
+        currentReview = 0;
+    }
+}
+
+showReview();
+
+setInterval(showReview, 3000);
+</script>
+<!-- Floating WhatsApp Enquiry Button -->
+<a href="https://wa.me/919876543210?text=Hello%20ELWEB!%20I%20would%20like%20to%20know%20more%20about%20your%20courses."
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Enquire on WhatsApp">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+         alt="WhatsApp">
+
+    <span>Enquire Now</span>
+
+</a>
+</body>
+
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Edu Institute</h3>
+            <p>
+                Empowering students through quality education,
+                innovation, and career-focused learning.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>📍 Hosur, Tamil Nadu</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📧 info@eduinstitute.com</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#">📘 Facebook</a>
+                <a href="#">📷 Instagram</a>
+                <a href="#">💼 LinkedIn</a>
+                <a href="#">▶ YouTube</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Edu Institute. All Rights Reserved.</p>
+    </div>
+
+</footer>
+</html>

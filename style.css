@@ -1,0 +1,575 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    
+    padding: 15px 80px;
+    height: 75px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    border-radius: 16px;
+    width: 70px;
+    height: 50px;
+    order: 1;
+}
+.brand {
+    order: 1;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    z-index: 10;
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: rgb(16, 15, 15);
+    padding: 10px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f7f8;
+    color: #136da5;
+}
+.card:hover{
+transform:translateY(-8px);
+}
+
+.marquee {
+    background-color: #136da5;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 10px;
+}
+.marquee ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+.hero {
+    background-image: url("C:/Users/geeth/Desktop/web/images/Gemini_Generated_Image_1npt781npt781npt - Copy.png");
+    background-size:auto;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+.hero h1 {
+   font-size: 50px;
+    margin-bottom: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #151516;
+    text-align:left;
+    float:left;
+    margin-right: 1000px;
+    position : relative;
+    padding: 20px;
+
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: black;
+    margin-right: 1000px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 350;
+    font-style:unset;
+    padding-left: 20px;
+}
+.hero button {
+    background-color: #136da5;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    float: left;
+    margin-right: 1000px;
+
+}
+
+.hero button:hover {
+    background-color: #ff5722;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #0b74d1;
+    transform: scale(1.05);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 80px;
+    background-color: #f0f0f0;
+}
+.card {
+    background-image: linear-gradient(to right,);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+    text-decoration:none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card p {
+    font-size: 16px;
+    color: #555;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card :hover {
+    transform:translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 95%;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.card{
+    box-shadow: 0 4px 15px rgba(37, 36, 36, 0.15);
+}
+.card:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color:#136da5 ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    display: inline-flex;
+    gap: 10px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.marquee2 {
+    background-color: #f5f7fa;
+    color: rgb(9, 9, 9);
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;   
+}
+.marquee2 ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+.hero2{
+    background-image: url("C:/Users/geeth/Desktop/web/images/ChatGPT Image Jun 23, 2026, 11_56_47 AM.png");
+    padding: 20px 20px;
+    height: 50vh;
+    width: 100%;
+    margin-left: 0px;
+    display: inline-block;
+    text-align: center;
+}
+.hero2 h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    float: left;
+    margin-right: 850px;
+    position: relative;
+    padding: 20px;
+}
+.hero2 p{
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #151516;
+    margin-right: 850px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 350;
+    font-style: unset;
+    padding-left: 20px;
+
+}
+.hero2 button{
+    background-color: #136da5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 850px;
+}
+
+
+.reviews{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.reviews h2{
+    font-size:36px;
+    margin-bottom:40px;
+    color:#333;
+}
+
+.review-container{
+    display:flex;
+    gap:20px;
+    min-width:max-content;
+}
+
+.review-card{
+    background:white;
+    width:300px;
+    min-width:300px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+    animation: fade 0.8s ease-in-out;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+.review-slider{
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.review-track{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollReviews 20s linear infinite;
+}
+
+.review-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scrollReviews{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.review-card img{
+    width:80px;
+    height:80px;
+    border-radius:20%;
+    margin-bottom:15px;
+}
+
+.review-card h3{
+    color:#222;
+}
+
+
+.course{
+    color:#6c63ff;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.review-card p{
+    color:#555;
+    line-height:1.5;
+}
+
+.stars{
+    margin-top:15px;
+    font-size:20px;
+}
+.location{
+    padding:60px 10%;
+    text-align:center;
+    background:#f8fafc;
+    
+}
+
+.location h2{
+    font-size:36px;
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+.location p{
+    color:#555;
+    margin-bottom:25px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map-container{
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.location{
+    padding: 60px 10%;
+    text-align:center;
+    background:#f8fafc;
+}
+
+.location h2{
+    font-size:36px;
+    color:#4f46e5;
+    margin-bottom:10px;
+}
+
+.location p{
+    color:#555;
+    margin-bottom:25px;
+}
+
+.map-container{
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.address{
+    margin-top:150px;
+    margin-left: 150px;
+    color:#444;
+    text-align:center;
+    
+}
+.address h3{
+    font-size: 50px;
+}
+.address p{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+.footer{
+    background:#1e293b;
+    color:white;
+    padding-top:50px;
+}
+
+.footer-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.footer-section{
+    flex:1;
+    min-width:220px;
+}
+
+.footer-section h3{
+    margin-bottom:15px;
+}
+
+.footer-section p{
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.footer-section ul{
+    list-style:none;
+}
+
+.footer-section ul li{
+    margin-bottom:10px;
+}
+
+.footer-section a{
+    text-decoration:none;
+    color:#cbd5e1;
+    transition:0.3s;
+}
+
+.footer-section a:hover{
+    color:white;
+}
+
+.social-icons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    color:#cbd5e1;
+}
+
+/* Floating WhatsApp Button */
+
+.whatsapp-float{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #25D366;
+    color: white;
+
+    padding: 14px 18px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+
+    z-index: 9999;
+
+    transition: .3s;
+}
+
+.whatsapp-float img{
+    width:32px;
+    height:32px;
+}
+
+.whatsapp-float:hover{
+    background:#1ebe5d;
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+}
+
+@media(max-width:768px){
+
+.whatsapp-float{
+
+padding:12px;
+
+border-radius:50%;
+
+}
+
+.whatsapp-float span{
+
+display:none;
+
+}
+
+.whatsapp-float img{
+
+width:34px;
+height:34px;
+
+}
+
+}
